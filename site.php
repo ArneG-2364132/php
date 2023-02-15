@@ -13,11 +13,12 @@
     echo "<hr>";
     echo "<p>This is my site</p>";
 
-    echo "<p>   ___                  _____            _    _</p>";
-    echo "<p>  / _ | _______  ___   / ___/__ _______ / /____</p>";
-    echo "<p> / __ |/ __/ _ \/ -_) / (_ / -_) __/ -_) __(_- </p>";
-    echo "<p>/_/ |_/_/ /_//_/\__/  \___/\__/_/  \__/\__/___/</p>";
-
+    echo "   ___                  _____            __ <br>";    
+    echo "  / _ | _______  ___   / ___/__ _______ / /____<br>";
+    echo " / __ |/ __/ _ \/ -_) / (_ / -_) __/ -_) __(_-<<br>";
+    echo "/_/ |_/_/ /_//_/\__/  \___/\__/_/  \__/\__/___/<br>";
+  
+  
     $age = 5;
     $name = "Salama";
 
@@ -50,7 +51,17 @@ echo "<br>";
 echo strtolower($phrase);
 echo "<br>";
 echo strlen($phrase);
+echo " scharacters";
 echo "<br>";
+echo $phrase[0];
+echo "<br>";
+$phrase[0] = "N";
+echo $phrase;
+echo "<br>";
+echo str_replace("text","live", $phrase);
+echo "<br>";
+echo substr($phrase, 5,4);
+echo "<hr>";
 
 
 
