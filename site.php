@@ -86,12 +86,8 @@ echo ceil($number)."<br>";
 
 echo "<hr>";
 
-
-
-
-
-
-
 ?> 
+<form action="site.php" method="get" >
+    <input type="text" name="name">
 </body>
 </html>
