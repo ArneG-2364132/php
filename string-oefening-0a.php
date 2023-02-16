@@ -9,21 +9,17 @@
 <body>
     <?php
 
-    $Welcome = "Dag Allemaal<br>";
+    $welcome = "Hallo iedereen<br>";
+    echo "test";
+    echo "<br>";
     echo $welcome;
     echo $welcome;
     echo $welcome;
     echo $welcome;
     echo $welcome;
-
-
-
-
-
-
-
-
-?>
+    $substring1 = substr($welcome,0,5);
+    $substring2 = substr($welcome, 7,8 );
+    ?>
 
 </body>
 </html>
