@@ -45,7 +45,8 @@ echo "boolean: $boolean <br>";
 echo "null = $null <br>";
 echo "<hr>";
 
-$phrase = "Very good text";
+$phrase = "Very good text<br>";
+
 echo strtoupper($phrase);
 echo "<br>";
 echo strtolower($phrase);
@@ -56,12 +57,13 @@ echo "<br>";
 echo $phrase[0];
 echo "<br>";
 $phrase[0] = "N";
-echo $phrase;
+echo $phrase;echo "<hr>";
 echo "<br>";
 echo str_replace("text","live", $phrase);
 echo "<br>";
 echo substr($phrase, 5,4);
 echo "<hr>";
+
 
 
 

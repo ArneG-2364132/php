@@ -36,7 +36,7 @@
 
     $length = strlen($substring3);
     echo "The length of $welcome is $length characters"."<br>";
-    $t = palindromen;
+    $t = "palindromen";
     $omdraaien = $t[10].$t[9].$t[8].$t[7].$t[6].$t[5].$t[4].$t[3].$t[2].$t[1].$t[0];
     echo $omdraaien;
 
