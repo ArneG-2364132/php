@@ -87,7 +87,65 @@ echo ceil($number)."<br>";
 echo "<hr>";
 
 ?> 
-<form action="site.php" method="get" >
-    <input type="text" name="name">
+<form 
+    action="site.php" method="get" >
+   Name: <input type="text" name="name">
+    <input type="submit">
+</form>       
+    <?php echo $_GET["name"]."<br>" ?>
+
+
+<form action='site.php' method="get">
+    <input type='number' name='num1' >
+    <br>
+    <input type='number' name='num2'>
+    <input type= 'submit'>
+
+</form>
+
+    <?php
+echo $_GET["num1"] + $_GET['num2'].'<br>';
+
+echo "<hr>";
+?>
+<form
+    action="site.php" method="get">
+    Color: <input type="text" name="color"> <br>
+    plural noun: <input type="text" name="noun"> <br>
+    celebrity: <input type="text" name="celebrity"> <br>
+    
+    <input type="submit"> <br>
+    </form>
+    <?php
+    $color =  $_GET["color"];
+    $noun =  $_GET["noun"];
+    $celebrity = $_GET["celebrity"];
+        
+    
+        echo "roses are $color <br>";
+        echo "$noun are blue <br>";
+        echo "I love $celebrity <br>";
+
+
+?>
+<form action="site.php" method="post">
+    Password: <input type="password" name="password"> <br>
+    <input type="submit">
+    
+</form>
+<?php
+    echo $_POST['password']
+?>
+
+<?php
+
+echo "<hr>";
+$array = array("test","salama","el","menoufi",6,9);
+echo $array ."<br>";
+echo $array[1]."<br>";
+$array[0] = "modified";
+$array[6] = "added";
+?>
+<br><br>
 </body>
 </html>
