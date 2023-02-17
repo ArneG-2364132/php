@@ -19,6 +19,18 @@ unset($producten[2]);
 print_r($producten)."<br>";
 echo isset($producten[1])."<br>";
 
+$extra = array("laptops","Tablets");
+array_push($producten,$extra);
+print_r($producten)."<br>";
+echo $producten[-1]."<br>";
+array_pop($producten);
+print_r($producten)."<br>";
+array_shift($producten); 
+print_r($producten)."<br>";
+array_unshift($producten, "TV's", "stereo"); 
+print_r($producten); 
+
+ 
 
 
 
