@@ -146,6 +146,35 @@ echo $array[1]."<br>";
 $array[0] = "modified";
 $array[6] = "added";
 ?>
+
+<form action="site.php" method="post">
+    Apples: <input type="checkbox" name="fruits[]" value="apples"><br>
+    Oranges: <input type="checkbox" name="fruits[]" value="oranges"><br>
+    Pears: <input type="checkbox" name="fruits[]" value="pears"><br>
+    <input type="submit">
+</form>
+
+<?php
+    $fruits= $_POST["fruits"];
+    echo $fruits[0]."<br>";
+
+    $grades = array("Jim"=>8,"Arne"=>10,"Salama"=>0);
+    echo $grades["Arne"];
+    echo "<hr>";
+
+    function sayHi($name, $age){
+
+        echo "hello $name, you are $age years old<br>";
+
+
+    }
+    sayHi("BOB",90);
+    sayHi("Arne",20);
+    sayHi("Salama",17);
+    echo "<hr>";
+
+?>
+
 <br><br>
 </body>
 </html>
