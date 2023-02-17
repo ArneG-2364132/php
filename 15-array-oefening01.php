@@ -17,7 +17,7 @@ echo count($producten)." producten zijn beschikbaar <br>";
 echo var_dump($producten)."<br>";
 unset($producten[2]);
 print_r($producten)."<br>";
-echo isset()
+echo isset($producten[1])."<br>";
 
 
 
