@@ -173,8 +173,34 @@ $array[6] = "added";
     sayHi("Salama",17);
     echo "<hr>";
 
+//return statements
+//function gives information back
+
+function cube($num){
+return $num * $num * $num;
+}
+echo cube(4);
+echo "<hr>";
+
+//if statement
+
+    $ismale = true;
+    $istall = true;
+    if($ismale && $istall){
+        echo "you are a tall male";
+    } elseif($ismale && !$istall){
+    echo "you are male and short";
+    }
+    elseif(!$ismale && $istall){
+        echo "you are not male but tall";
+    }
+
+    else{
+        echo "you are not male and not tall";
+    }
+
 ?>
 
 <br><br>
 </body>
-</html>
+</html

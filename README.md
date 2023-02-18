@@ -13,4 +13,7 @@ output: `null`<br/>
 - printr<br/>
 input: `print_r($producten)."<br>"`<br/>
 output:`array ( [0] => Boeken [1] => CD's [2] => Smarphones [3] => DVD's )`<br/>
- -
+ - and or not statements <br/>
+    and: `&&` <br/>
+    or: `||` <br/>
+    not(negation): `!$boolean`
